@@ -1,0 +1,222 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+}
+
+.masonry {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.masonry > div {
+  margin: 10px;
+  width: 30%;
+}
+
+.item {
+  background-color: #eee;
+  margin: 0 0 1em;
+  overflow: hidden;
+  background-color: #00305b;
+  border-radius: 10px;
+}
+
+/*.item img {
+    width: 100%;
+    height: auto;
+}*/
+
+@keyframes comein {
+  0% {
+    transform: translate3d(100%, 100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.item img {
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.atcard-overlay {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.438);
+  transition: opacity 0.5s ease;
+}
+
+.atcard-overlay:hover {
+  opacity: 1;
+}
+
+.card {
+  border-width: 0px;
+  border-radius: 0px;
+}
+
+@media only screen and (max-width: 450px) {
+  h5 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  h5 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  h5 {
+    font-size: 0.69rem;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  h5 {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  h5 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  h5 {
+    font-size: 1.5rem;
+  }
+}
+
+.atcard-overlay .card-title {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.atcard:hover .atcard-img {
+  transform: scale(1.2);
+}
+
+.alumteampics {
+  width: 100%;
+  background-color: #00305b;
+  height: auto;
+  position: relative;
+  padding-top: 5rem;
+}
+
+.allteampics .teamlink {
+  width: 4vw;
+  height: 4vw;
+  display: inline-block;
+  margin: 0.5em;
+  transition: opacity 0.1s ease;
+  opacity: 0.82;
+}
+
+.link {
+  width: 23%;
+  height: 23%;
+  display: inline-block;
+  margin: 0.5em;
+  transition: opacity 0.1s ease;
+  opacity: 0.82;
+}
+
+/*.allteampics .teamlink img {
+    width: 100%;
+    height: 100%;
+}*/
+
+.alumpicsmiddle {
+  width: 80%;
+  margin: auto;
+  display: block;
+  background-color: #00305b;
+}
+
+.heading {
+  /* width: 100%; */
+  background-color: white;
+  padding: 0.5rem;
+  color: #00305b;
+  text-align: center;
+}
+
+.last {
+  /*color: rgba(255,255,255);*/
+  color: white;
+  background-color: #0f497c;
+  /*#6610f2;/*rgba(234,244,246)*/
+  /*rgba(0,48,91,0.9)*/
+  /*#f4f4f4*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+  border: none;
+  /* &:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+      } */
+}
+
+#container {
+  width: 100%;
+  margin: 2em auto;
+}
+
+.cols {
+  -moz-column-count: 3;
+  -moz-column-gap: 3%;
+  -moz-column-width: 30%;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 3%;
+  -webkit-column-width: 30%;
+  column-count: 3;
+  column-gap: 2%;
+  column-width: 30%;
+}
+
+.box {
+  margin-bottom: 20px;
+  height: 200px;
+  background: #bfbfbf;
+}
+
+.container {
+  padding-left: 0;
+  padding-right: 0%;
+}
+
+.row {
+  justify-content: space-around;
+}
+
+.photo {
+  margin: 0%;
+  font-size: 110%;
+  font-weight: bolder;
+}
+.names {
+  display: flex;
+}
+.card-list {
+  padding-inline-start: 0;
+  padding-left: 5%;
+}
+.card-list-right {
+  margin-left: 3%;
+}
